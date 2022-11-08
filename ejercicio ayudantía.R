@@ -10,9 +10,9 @@ library(dplyr)
 
 getwd() #ver directorio
 
-df_casino <- read_excel("C:/Users/herma/OneDrive/Escritorio/Customer Trigger/Ayudantia/Bdd_Ayudantia.xlsx", sheet = 1)
-df_biblio <- read_excel("C:/Users/herma/OneDrive/Escritorio/Customer Trigger/Ayudantia/Bdd_Ayudantia.xlsx", sheet = 2)
-df_salas <- read_excel("C:/Users/herma/OneDrive/Escritorio/Customer Trigger/Ayudantia/Bdd_Ayudantia.xlsx", sheet = 3)
+df_casino <- read_excel("C:/Users/herma/OneDrive/Escritorio/Customer Trigger/Ayudantia/BDD_Ayudantia.xlsx", sheet = 1)
+df_biblio <- read_excel("C:/Users/herma/OneDrive/Escritorio/Customer Trigger/Ayudantia/BDD_Ayudantia.xlsx", sheet = 2)
+df_salas <- read_excel("C:/Users/herma/OneDrive/Escritorio/Customer Trigger/Ayudantia/BDD_Ayudantia.xlsx", sheet = 3)
 # sheet es la pestaña del excel
 
 #biblioteca
