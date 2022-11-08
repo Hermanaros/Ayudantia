@@ -4,20 +4,22 @@
 
 library(readxl)
 library(dplyr)
-
+library(rio)
 
 # Cargar base de datos ----------------------------------------------------
 
+## Desde PC local: ------
 getwd() #ver directorio
 
 df_casino <- read_excel("C:/Users/herma/OneDrive/Escritorio/Customer Trigger/Ayudantia/BDD_Ayudantia.xlsx", sheet = 1)
 df_biblio <- read_excel("C:/Users/herma/OneDrive/Escritorio/Customer Trigger/Ayudantia/BDD_Ayudantia.xlsx", sheet = 2)
 df_salas <- read_excel("C:/Users/herma/OneDrive/Escritorio/Customer Trigger/Ayudantia/BDD_Ayudantia.xlsx", sheet = 3)
 # sheet es la pestaña del excel
+## Desde Github: -----
 
-#biblioteca
-names(df_biblio) # ver los nombres de las variables
-
+df_biblio <- import("https://raw.githubusercontent.com/Hermanaros/Ayudantia/main/df_biblio.csv")
+df_casino <- import("https://raw.githubusercontent.com/Hermanaros/Ayudantia/main/df_casino.csv")
+df_salas <- import("https://raw.githubusercontent.com/Hermanaros/Ayudantia/main/df_salas.csv")
 
 # Regresion lineal --------------------------------------------------------
 
