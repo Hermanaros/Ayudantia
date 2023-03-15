@@ -1,6 +1,8 @@
 
 # Librerías ---------------------------------------------------------------
-
+install.packages("readxl")
+install.packages("dplyr")
+install.packages("rio")
 
 library(readxl)
 library(dplyr)
@@ -10,6 +12,7 @@ library(rio)
 
 ## Desde PC local: ------
 getwd() #ver directorio
+# df <- read_excel("directorio/del/usuario")
 
 df_casino <- read_excel("C:/Users/herma/OneDrive/Escritorio/Customer Trigger/Ayudantia/BDD_Ayudantia.xlsx", sheet = 1)
 df_biblio <- read_excel("C:/Users/herma/OneDrive/Escritorio/Customer Trigger/Ayudantia/BDD_Ayudantia.xlsx", sheet = 2)
