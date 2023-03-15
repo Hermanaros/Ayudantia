@@ -135,6 +135,40 @@ calidad_PC_detractor<-(df_salas %>% filter(Satisf_CalidadComputadores < 7) %>%  
 #satisf neta: 4.469274
 
 
+# Casino ------------------------------------------------------------------
+
+names(df_casino)
+
+modelo_casino <- lm(data=df_casino, Satisf_General_Casino ~ Satisf_Comida + Satisf_Calidad_Atencion +
+                      Satisf_Rapidez_Atencion)
+
+summary(modelo_casino)
+
+###satisfaccion
+
+
+n <- length(df_casino$Satisf_Comida) # total de filas
+
+names(df_casino)
+## satisf comida-----
+comida_promoter<-(df_casino %>% filter(Satisf_Comida  > 8) %>%  count())/n
+comida_detractor<-(df_casino %>% filter(Satisf_Comida < 7) %>%  count())/n
+((comida_promoter) - (comida_detractor))*100
+#satisf neta: 45.66
+
+## satisf Calidad Atencion -----
+calidad_promoter<-(df_casino %>% filter(Satisf_Calidad_Atencion  > 8) %>%  count())/n
+calidad_detractor<-(df_casino %>% filter(Satisf_Calidad_Atencion < 7) %>%  count())/n
+((calidad_promoter) - (calidad_detractor))*100
+#satisf neta: 46.79
+
+## satisf Rapidez_Atencion  -------
+rapidez_promoter<-(df_casino %>% filter(Satisf_Rapidez_Atencion  > 8) %>%  count())/n
+rapidez_detractor<-(df_casino %>% filter(Satisf_Rapidez_Atencion < 7) %>%  count())/n
+((rapidez_promoter) - (rapidez_detractor))*100
+#satisf neta: 33.58
+
+
 # Otros ejemplos -----------------------------------------------------------
 
 #base aleatoria
