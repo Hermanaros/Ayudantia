@@ -14,9 +14,9 @@ library(rio)
 getwd() #ver directorio
 # df <- read_excel("directorio/del/usuario")
 
-df_casino <- read_excel("C:/Users/herma/OneDrive/Escritorio/Customer Trigger/Ayudantia/BDD_Ayudantia.xlsx", sheet = 1)
-df_biblio <- read_excel("C:/Users/herma/OneDrive/Escritorio/Customer Trigger/Ayudantia/BDD_Ayudantia.xlsx", sheet = 2)
-df_salas <- read_excel("C:/Users/herma/OneDrive/Escritorio/Customer Trigger/Ayudantia/BDD_Ayudantia.xlsx", sheet = 3)
+df_casino <- read_excel("C:/Users/Ayudantia/BDD_Ayudantia.xlsx", sheet = 1)
+df_biblio <- read_excel("C:/Users/Ayudantia/BDD_Ayudantia.xlsx", sheet = 2)
+df_salas <- read_excel("C:/Users/Ayudantia/BDD_Ayudantia.xlsx", sheet = 3)
 # sheet es la pestaña del excel
 ## Desde Github: -----
 
